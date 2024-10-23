@@ -1,0 +1,156 @@
+:root {
+    --my-background:rgb(221, 221, 221);
+    --my-bg: rgb(97, 97, 90);
+    --sub-list-bg: hsl(0, 0%, 7%, .5);
+}
+*{
+    font-family: "Poppins", "Roboto", "Merriweather Sans";
+}
+body{
+    background-color: var(--my-background);
+}
+
+.my-container{
+    padding: 3% 10%;
+    margin: 0;
+}
+.search-container{
+    padding: .5% 10%;
+    margin: 0;
+}
+.my-btn{
+    background-color: var(--my-bg);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+.buy-btn {
+    background-color: hsl(120, 88%, 7%);
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--my-bg);
+    padding: 1% 12%;
+}
+.navbrand a{
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;
+    font-weight: 500;
+}
+.nav_items{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_items li{
+    list-style: none;
+    width: fit-content;
+}
+.my-list-item{
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+    background-color: var(--my-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition-duration: 1000ms;
+}
+.my-list-item:hover{
+    background-color: var(--my-background);
+    color: #111;
+}
+.favicon-icon {
+    border: none;
+    border-radius: 3px;
+    display: none;
+}
+.toggle_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcome-container {
+    background: linear-gradient(30deg, hsl(201, 96%, 18%), hsl(201, 77%, 32%));
+}
+.settings{
+    position: relative;
+}
+.settings-list {
+    width: fit-content;
+    position: absolute;
+    right: 22%;
+    display: none;
+    background-color: var(--my-bg);
+    border-radius: 3px;
+}
+.settings-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: medium;
+}
+.settings-list ul li{
+    min-width: 200px;
+}
+.side-posts{
+    background-color: var(--my-bg);
+    border-radius: 4px;
+}
+.side-posts button{
+    width: 100%;
+    background-color: rgb(129, 126, 126);
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 7px 3px;
+}
+.side-posts a {
+    color: #fff;
+    text-decoration: none;
+}
+@media(max-width: 1000px){
+    .navbar{
+        padding: 1% 6%;
+    }
+}
+@media(max-width: 760px){
+    .navbar{
+        padding: 1% 3%;
+    }
+}
+@media(max-width: 550px){
+    .navbrand{
+        align-self: flex-start;
+        margin-top: 15px;
+    }
+    .nav_items{
+        flex-direction: column;
+        display: none;
+        background-color: rgba(97, 97, 90, .7);
+    }
+    .favicon-icon {
+        display: block;
+        margin-top: 15px;
+    }
+    .nav_items li {
+        margin: 13px auto;
+    }
+    .settings-list {
+        right: 1%;
+    }
+}
+@media (min-width: 992px) {
+    .w-lg-50 {
+        width: 50%;
+    }
+}
+

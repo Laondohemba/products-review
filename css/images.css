@@ -1,0 +1,54 @@
+:root{
+    --other-bg: hsl(0, 0%, 100%, .6);
+}
+.my_row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.my_card{
+    width: 95%;
+    border-radius: 4px;
+    margin: 10px;
+    background-color: var(--other-bg);
+    padding: 1.5px;
+}
+.img_container {
+    width: 100%;
+    height: fit-content;
+    /* background-image: url(../pictures/wrist_watches/wristwatch7.jpg); */
+    background-size: cover;
+    background-position: center;
+}
+.my_card_body{
+    margin: 15px;
+}
+.like_btn{
+    background-color: inherit;
+    border: none;
+}
+@media(max-width: 992px){
+    .my_row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width: 720px){
+    .my_row{
+        grid-template-columns: 1fr;
+    }
+    .my_card{
+        display: flex;
+        min-width: 100%;
+    }
+}
+@media(max-width: 720px){
+    .my_card{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width: 720px){
+    .my_card{
+        display: flex;
+        min-width: 100%;
+    }
+}

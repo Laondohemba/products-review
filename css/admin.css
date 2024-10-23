@@ -1,0 +1,30 @@
+:root{
+    --other-bg: hsl(0, 0%, 100%, .6);
+}
+.login-form-container{
+    width: 34%;
+    min-width: 350px;
+    margin: 7% auto;
+    background-color: var(--other-bg);
+    padding: 25px;
+    border-radius: 8px;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.create_post_form {
+    width: 40%;
+    min-width: 400px;
+}
+.post-form-container{
+    width: 55%;
+    min-width: 350px;
+    margin: 3% auto;
+    background-color: var(--other-bg);
+    padding: 25px;
+    border-radius: 8px;
+}
+
